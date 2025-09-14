@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hire Talent - Wfusion</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow fixed w-full z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="images/logo.png" alt="Wfusion Logo" class="h-10">
+        <span class="text-xl font-bold text-gray-800">Wfusion</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main class="max-w-4xl mx-auto pt-32 px-6">
+    <h1 class="text-4xl font-bold mb-6 text-center text-indigo-700">🚀 Hire Talent</h1>
+    <p class="mb-8 text-center text-gray-600">
+      Fill out this form to tell us about your project.  
+      We'll connect you with skilled Filipino programmers & VAs.
+    </p>
+
+    <!-- Google Form Embed -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFGhSCoF4Ib7AGXbvOFPmPcG5IAD0a5rfqhcX2Ps3h1EmN9g/viewform?embedded=true"
+            width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0"
+            class="rounded-xl shadow-lg">
+      Loading…
+    </iframe>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-8 mt-16 text-center">
+    <p>&copy; 2025 Wfusion. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
