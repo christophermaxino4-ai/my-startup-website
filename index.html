@@ -8,8 +8,25 @@
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
 
+  <!-- Navbar -->
+  <header class="bg-white shadow fixed w-full z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2">
+        <img src="images/logo.png" alt="Wfusion Logo" class="h-10">
+        <span class="text-xl font-bold text-gray-800">Wfusion</span>
+      </a>
+      <!-- Nav Links -->
+      <nav class="hidden md:flex gap-6">
+        <a href="#how-it-works" class="text-gray-600 hover:text-blue-600">How It Works</a>
+        <a href="#categories" class="text-gray-600 hover:text-blue-600">Categories</a>
+        <a href="#contact" class="text-gray-600 hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
   <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-indigo-600 via-blue-600 to-purple-600 text-white py-20">
+  <section class="bg-gradient-to-r from-indigo-600 via-blue-600 to-purple-600 text-white py-32">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
       <!-- Left Text -->
       <div>
@@ -20,13 +37,11 @@
           Affordable, reliable, and professional freelancers ready to grow your business across Asia.
         </p>
         <div class="flex gap-4">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeFGhSCoF4Ib7AGXbvOFPmPcG5IAD0a5rfqhcX2Ps3h1EmN9g/viewform?usp=dialog"
-             target="_blank"
+          <a href="hire.html"
              class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transform transition">
              🚀 Hire Talent
           </a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdc__FclLkoqMIk9y8odlN08WQVHvn15MJeiu-s83I_ikBJRg/viewform?usp=dialog"
-             target="_blank"
+          <a href="freelancer.html"
              class="bg-white/90 backdrop-blur text-blue-700 px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transform transition">
              🙌 Join as Freelancer
           </a>
@@ -41,7 +56,7 @@
   </section>
 
   <!-- How It Works -->
-  <section class="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
+  <section id="how-it-works" class="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
     <div class="max-w-6xl mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold mb-12">How It Works</h2>
       <div class="grid md:grid-cols-3 gap-8">
@@ -65,7 +80,7 @@
   </section>
 
   <!-- Talent Categories -->
-  <section class="py-20">
+  <section id="categories" class="py-20">
     <div class="max-w-6xl mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold mb-12">Explore Our Talent Categories</h2>
       <div class="grid md:grid-cols-4 gap-8">
@@ -93,13 +108,11 @@
   <section class="bg-gradient-to-r from-indigo-700 via-purple-700 to-pink-600 text-white py-20 text-center">
     <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to grow your business with Filipino talent?</h2>
     <div class="flex justify-center gap-4">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeFGhSCoF4Ib7AGXbvOFPmPcG5IAD0a5rfqhcX2Ps3h1EmN9g/viewform?usp=dialog"
-         target="_blank"
+      <a href="hire.html"
          class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition">
          🚀 Hire Talent
       </a>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdc__FclLkoqMIk9y8odlN08WQVHvn15MJeiu-s83I_ikBJRg/viewform?usp=dialog"
-         target="_blank"
+      <a href="freelancer.html"
          class="bg-white/90 text-purple-800 px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition">
          🙌 Join as Freelancer
       </a>
@@ -107,7 +120,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-400 py-10 text-center">
+  <footer id="contact" class="bg-gray-900 text-gray-400 py-10 text-center">
     <p>&copy; 2025 Wfusion. All rights reserved.</p>
     <div class="mt-4 flex justify-center gap-6">
       <a href="#" class="hover:text-white">About</a>
