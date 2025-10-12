@@ -1,171 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hire Talent - Wfusion</title>
-  <meta name="description" content="Hire skilled Filipino freelancers, programmers, and virtual assistants through Wfusion. Connect with top professionals for your business.">
-  <meta name="keywords" content="Wfusion, hire freelancers, Filipino talent, virtual assistant, programmer, outsource work">
-  <link rel="icon" href="images/favicon.png" type="image/png">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-[#0D0D0D] text-gray-100">
 
   <!-- Navbar -->
-  <header class="bg-white shadow fixed w-full z-50">
+  <header class="bg-[#1A1A1A]/90 backdrop-blur fixed w-full z-50 border-b border-[#2A2A2A]">
     <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="index.html" class="flex items-center gap-2">
-        <img src="images/logo.png" alt="Wfusion Logo" class="h-10">
-        <span class="text-xl font-bold text-gray-800">Wfusion</span>
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="images/logo.png" alt="Wfusion Logo" class="h-10 object-contain scale-150">
       </a>
-
-      <!-- Desktop Links -->
-      <nav class="hidden md:flex gap-6">
-        <a href="index.html#how-it-works" class="text-gray-600 hover:text-indigo-600">How It Works</a>
-        <a href="index.html#categories" class="text-gray-600 hover:text-indigo-600">Categories</a>
-        <a href="freelancer.html" class="text-gray-600 hover:text-indigo-600">Join as Freelancer</a>
-      </nav>
-
-      <!-- Mobile Menu Button -->
-      <button id="menu-btn" class="md:hidden text-gray-600 hover:text-indigo-600 focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-          viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16m0 6H4" />
-        </svg>
-      </button>
     </div>
-
-    <!-- Mobile Menu -->
-    <nav id="mobile-menu" class="hidden flex-col bg-white shadow-lg absolute top-full left-0 w-full md:hidden">
-      <a href="index.html#how-it-works" class="py-2 px-6 hover:bg-gray-100">How It Works</a>
-      <a href="index.html#categories" class="py-2 px-6 hover:bg-gray-100">Categories</a>
-      <a href="freelancer.html" class="py-2 px-6 hover:bg-gray-100">Join as Freelancer</a>
-    </nav>
   </header>
 
   <!-- Hero -->
-  <section class="bg-gradient-to-r from-indigo-700 via-purple-700 to-pink-600 text-white py-20 mt-16 text-center rounded-b-3xl shadow-lg">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4">🚀 Hire Filipino Talent with Wfusion</h1>
-    <p class="text-lg max-w-2xl mx-auto text-gray-100">
-      Connect with skilled programmers, virtual assistants, designers, and marketers in the Philippines.
-      Affordable, reliable, and ready to help your business grow.
+  <section class="pt-32 pb-12 text-center bg-gradient-to-br from-[#1A1A1A] to-black">
+    <h1 class="text-5xl font-bold text-[#FF6B00] mb-4">Hire Talent</h1>
+    <p class="text-gray-400 max-w-2xl mx-auto">
+      Connect with skilled Filipino professionals to grow your business.
     </p>
   </section>
 
-  <!-- Why Hire -->
-  <section class="py-12 text-center max-w-6xl mx-auto px-6">
-    <h2 class="text-2xl font-semibold mb-6">Why Hire Through Wfusion?</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-        <h3 class="font-semibold text-lg mb-2 text-indigo-600">💡 Handpicked Talent</h3>
-        <p class="text-gray-600">We carefully screen freelancers to ensure high-quality work and professionalism.</p>
-      </div>
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-        <h3 class="font-semibold text-lg mb-2 text-indigo-600">⏱️ Quick Matching</h3>
-        <p class="text-gray-600">Get matched with suitable freelancers within days, not weeks.</p>
-      </div>
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-        <h3 class="font-semibold text-lg mb-2 text-indigo-600">🌍 Global Reach</h3>
-        <p class="text-gray-600">Access a network of talented professionals ready to collaborate remotely.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Hire Form -->
-  <main class="max-w-3xl mx-auto px-6 py-16">
-    <h2 class="text-3xl font-bold text-center mb-8 text-indigo-700">Tell Us What You Need</h2>
-
-    <!-- Netlify form -->
-    <form name="hire-form" method="POST" data-netlify="true" class="bg-white p-8 rounded-2xl shadow-2xl border border-gray-200 space-y-6">
-      <input type="hidden" name="form-name" value="hire-form">
-
+  <!-- Form -->
+  <main class="max-w-4xl mx-auto px-6 py-12">
+    <form name="hireForm" netlify class="bg-[#1A1A1A] p-8 rounded-2xl shadow-xl border border-[#2A2A2A] space-y-6">
       <div>
-        <label class="block text-gray-700 font-medium mb-2">Full Name</label>
-        <input type="text" name="name" required placeholder="Your full name"
-          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <label class="block mb-2 font-semibold">Full Name</label>
+        <input type="text" name="name" required class="w-full p-3 rounded bg-[#0D0D0D] border border-[#2A2A2A] focus:border-[#FF6B00] outline-none">
       </div>
-
       <div>
-        <label class="block text-gray-700 font-medium mb-2">Company Name (optional)</label>
-        <input type="text" name="company" placeholder="Your company or business name"
-          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <label class="block mb-2 font-semibold">Email</label>
+        <input type="email" name="email" required class="w-full p-3 rounded bg-[#0D0D0D] border border-[#2A2A2A] focus:border-[#FF6B00] outline-none">
       </div>
-
       <div>
-        <label class="block text-gray-700 font-medium mb-2">Email Address</label>
-        <input type="email" name="email" required placeholder="you@company.com"
-          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <label class="block mb-2 font-semibold">Project Description</label>
+        <textarea name="project" rows="4" required class="w-full p-3 rounded bg-[#0D0D0D] border border-[#2A2A2A] focus:border-[#FF6B00] outline-none"></textarea>
       </div>
-
       <div>
-        <label class="block text-gray-700 font-medium mb-2">Job Type Needed</label>
-        <select name="job_type" required
-          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-          <option value="">Select one</option>
-          <option>Programmer</option>
-          <option>Virtual Assistant</option>
-          <option>Graphic Designer</option>
-          <option>Social Media Manager</option>
-          <option>Content Writer</option>
-          <option>Other</option>
+        <label class="block mb-2 font-semibold">Category</label>
+        <select name="category" class="w-full p-3 rounded bg-[#0D0D0D] border border-[#2A2A2A] focus:border-[#FF6B00] outline-none">
+          <option>Programmers</option>
+          <option>Designers</option>
+          <option>Virtual Assistants</option>
+          <option>Marketing Support</option>
         </select>
       </div>
-
-      <div>
-        <label class="block text-gray-700 font-medium mb-2">Project Description</label>
-        <textarea name="description" rows="5" required placeholder="Describe what you need help with..."
-          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
-      </div>
-
-      <div>
-        <label class="block text-gray-700 font-medium mb-2">Budget Range</label>
-        <input type="text" name="budget" placeholder="e.g. $500 - $1000 or hourly rate"
-          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-      </div>
-
-      <div>
-        <label class="block text-gray-700 font-medium mb-2">Preferred Start Date</label>
-        <input type="date" name="start_date"
-          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-      </div>
-
-      <div class="text-center">
-        <button type="submit"
-          class="bg-indigo-600 text-white px-8 py-3 rounded-full font-semibold shadow hover:scale-105 transform transition">
-          Submit Request
-        </button>
-      </div>
+      <button type="submit" class="w-full bg-[#FF6B00] text-black font-bold py-3 rounded-lg hover:scale-105 transition">
+        Submit
+      </button>
     </form>
-
-    <!-- Back link -->
-    <div class="text-center mt-10">
-      <a href="freelancer.html"
-        class="inline-block bg-green-600 text-white px-6 py-3 rounded-full font-semibold shadow hover:scale-105 transition">
-        Looking for Work Instead? →
-      </a>
-    </div>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-400 py-10 text-center">
-    <p>&copy; 2025 Wfusion. All rights reserved.</p>
-    <div class="mt-4 flex justify-center gap-6">
-      <a href="#" class="hover:text-white">About</a>
-      <a href="#" class="hover:text-white">FAQ</a>
-      <a href="#" class="hover:text-white">Contact</a>
-      <a href="#" class="hover:text-white">Terms</a>
-      <a href="#" class="hover:text-white">Privacy</a>
-    </div>
+  <footer class="bg-[#0D0D0D] border-t border-[#2A2A2A] py-8 text-center text-gray-500">
+    &copy; 2025 Wfusion. All rights reserved.
   </footer>
-
-  <!-- Mobile Menu Script -->
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
 </body>
 </html>
